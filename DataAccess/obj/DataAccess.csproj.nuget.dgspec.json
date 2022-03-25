@@ -30,7 +30,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -42,6 +46,40 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Autofac": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            },
+            "Autofac.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[10.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.8.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -88,6 +126,9 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
+              "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj"
+              },
               "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj": {
                 "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj"
               }
@@ -112,13 +153,9 @@
               "target": "Package",
               "version": "[5.0.10, )"
             },
-            "Microsoft.EntityFrameworkCore.Design": {
+            "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
-              "target": "Package",
-              "version": "[5.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[5.0.10, )"
             },
@@ -176,11 +213,7 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {
-              "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {

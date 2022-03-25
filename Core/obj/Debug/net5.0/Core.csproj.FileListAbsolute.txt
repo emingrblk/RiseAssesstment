@@ -1,0 +1,12 @@
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\Core.deps.json
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\Core.dll
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\ref\Core.dll
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\Core.pdb
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.csproj.AssemblyReference.cache
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.AssemblyInfoInputs.cache
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.AssemblyInfo.cs
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.csproj.CoreCompileInputs.cache
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.dll
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\ref\Core.dll
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.pdb
