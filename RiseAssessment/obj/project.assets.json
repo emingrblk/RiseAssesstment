@@ -1,30 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {
-      "Core/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/Core.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Core.dll": {}
-        }
-      }
-    }
+    "net5.0": {}
   },
-  "libraries": {
-    "Core/1.0.0": {
-      "type": "project",
-      "path": "../Core/Core.csproj",
-      "msbuildProject": "../Core/Core.csproj"
-    }
-  },
+  "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": [
-      "Core >= 1.0.0"
-    ]
+    "net5.0": []
   },
   "packageFolders": {
     "C:\\Users\\eming\\.nuget\\packages\\": {},
@@ -33,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj",
-      "projectName": "Entities",
-      "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\RiseAssessment\\RiseAssessment.csproj",
+      "projectName": "RiseAssessment",
+      "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\RiseAssessment\\RiseAssessment.csproj",
       "packagesPath": "C:\\Users\\eming\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\RiseAssessment\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -56,11 +37,7 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {
-            "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj": {
-              "projectPath": "C:\\Users\\eming\\source\\repos\\RiseAssessment\\Core\\Core.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {
@@ -83,6 +60,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
