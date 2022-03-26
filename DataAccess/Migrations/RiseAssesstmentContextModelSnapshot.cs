@@ -45,7 +45,7 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("ContactId")
+                    b.Property<Guid>("ContactId")
                         .HasColumnType("uuid");
 
                     b.Property<string>("Description")
@@ -65,6 +65,41 @@ namespace DataAccess.Migrations
                     b.HasIndex("ContactId");
 
                     b.ToTable("ContactInformations");
+                });
+
+            modelBuilder.Entity("Entities.Concrete.Entities.MiddlewareLog", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("ControllerName")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp without time zone");
+
+                    b.Property<string>("LogInnerException")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LogMessage")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LogMethod")
+                        .HasColumnType("text");
+
+                    b.Property<string>("LogStackTrace")
+                        .HasColumnType("text");
+
+                    b.Property<string>("Path")
+                        .HasColumnType("text");
+
+                    b.Property<string>("UserIp")
+                        .HasColumnType("text");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MiddlewareLogs");
                 });
 
             modelBuilder.Entity("Entities.Concrete.Entities.OperationClaim", b =>
@@ -174,7 +209,9 @@ namespace DataAccess.Migrations
                 {
                     b.HasOne("Entities.Concrete.Entities.Contact", null)
                         .WithMany("ContactInformations")
-                        .HasForeignKey("ContactId");
+                        .HasForeignKey("ContactId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Entities.Concrete.Entities.Report", b =>

@@ -17,6 +17,8 @@ namespace Entities.Concrete.Entities
         public string Description { get; set; }
 
 
-   
+        public Guid ContactId { get; set; }
+
+
     }
 }

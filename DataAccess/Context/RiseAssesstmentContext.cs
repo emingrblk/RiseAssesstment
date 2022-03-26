@@ -18,7 +18,8 @@ namespace DataAccess.Context
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<ReportStatus> ReportStatuses { get; set; }
         public DbSet<Report> Reports { get; set; }
+        public DbSet<MiddlewareLog> MiddlewareLogs { get; set; }
 
-         
+
     }
 }

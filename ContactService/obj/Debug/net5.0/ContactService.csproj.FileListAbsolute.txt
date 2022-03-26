@@ -68,3 +68,5 @@ C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\Newto
 C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\Humanizer.dll
 C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\eming\source\repos\RiseAssessment\ContactService\obj\Debug\net5.0\ContactService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

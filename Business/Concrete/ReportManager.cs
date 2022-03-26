@@ -54,10 +54,10 @@ namespace Business.Concrete
         {
            
             IList<ReportBody> query = new List<ReportBody>();
-            var locationList = model.ContactInformationModels.Select(q => q.Location).Distinct();
-            foreach (var location in locationList.Where(q=>model.location == null || q==model.location ))
+            IEnumerable<string> locationList =   model.ContactInformationModels.Select(q => q.Location).Distinct();
+            foreach (var location in  locationList.Where(q=>model.location == null || q==model.location ))
             {
-                var x = new ReportBody
+                var  x = new ReportBody
                 {
                     Location = location,
                     ContactCount = model.ContactInformationModels.Count(q => q.Location==location),
@@ -67,7 +67,7 @@ namespace Business.Concrete
             }
          
 
-            return new SuccessDataResult<string>(JsonConvert.SerializeObject(query), Messages.ReportBodyCreated);
+            return  new SuccessDataResult<string>(JsonConvert.SerializeObject(query), Messages.ReportBodyCreated);
 
 
         }

@@ -10,3 +10,6 @@ C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.csproj.Cor
 C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.dll
 C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\ref\Core.dll
 C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.pdb
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\Entities.dll
+C:\Users\eming\source\repos\RiseAssessment\Core\bin\Debug\net5.0\Entities.pdb
+C:\Users\eming\source\repos\RiseAssessment\Core\obj\Debug\net5.0\Core.csproj.CopyComplete

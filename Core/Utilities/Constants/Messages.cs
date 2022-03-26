@@ -24,6 +24,8 @@ namespace Core.Utilities.Constants
         public const string ReportUpdated = "Rapor Başarıyla Güncellendi.";
         public const string ReportBodyCreated = "Rapor İçeriği Oluştu.";
 
+        public const string MiddlewareLogAdded= "Log kaydı oluşturuldu.";
+
 
     }
 }

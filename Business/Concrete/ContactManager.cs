@@ -14,9 +14,12 @@ namespace Business.Concrete
     {
         private readonly IContactRepository _contactRepository;
 
-        public ContactManager(IContactRepository contactRepository)
+        private readonly IContactInformationRepository _contactInformationRepository;
+
+        public ContactManager(IContactRepository contactRepository, IContactInformationRepository contactInformationRepository)
         {
             _contactRepository = contactRepository;
+            _contactInformationRepository = contactInformationRepository;
         }
 
         public async Task<IDataResult<IList<Contact>>> GetAllAsync()
@@ -45,6 +48,15 @@ namespace Business.Concrete
 
         public async Task<IResult> DeleteAsync(Guid id)
         {
+            var contactInformations = _contactInformationRepository.GetAllAsync().Result.Where(x => x.ContactId == id).ToList();
+            if (!contactInformations.Any())
+            {
+                foreach (var item in contactInformations)
+                {
+                    await  _contactInformationRepository.DeleteAsync(item.Id);
+                }
+            }
+
             await _contactRepository.DeleteAsync(id);
             return new SuccessResult(Messages.ContactDeleted);
         }
