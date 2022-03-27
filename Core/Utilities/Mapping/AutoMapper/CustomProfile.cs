@@ -12,7 +12,7 @@ namespace Core.Utilities.Mapping.AutoMapper
         {
             CreateMap<Contact, ContactListDto>()
                 .ForMember(dest => dest.ContactInformation, opt =>
-                       opt.MapFrom(a => a.ContactInformations.Select(q => new ContactInformationDto() { Id = q.Id, Phone = q.Phone, Email = q.EMail, Location = q.Location }).ToArray()));
+                       opt.MapFrom(a => a.ContactInformations.Select(q => new ContactInformationDto() { Id = q.Id, Phone = q.Phone, EMail = q.EMail, Location = q.Location }).ToArray()));
 
             CreateMap<Contact, ContactDto>().ReverseMap();
        

@@ -125,6 +125,9 @@ namespace DataAccess.Migrations
                     b.Property<int>("ContactCount")
                         .HasColumnType("integer");
 
+                    b.Property<string>("FilePath")
+                        .HasColumnType("text");
+
                     b.Property<string>("Location")
                         .HasColumnType("text");
 

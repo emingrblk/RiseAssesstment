@@ -39,7 +39,11 @@ namespace ContactService
 
             services.AddAutoMapper(typeof(CustomProfile));
 
-            services.AddDbContext<RiseAssesstmentContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<RiseAssesstmentContext>(options =>
+
+                           options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("ContactService")), ServiceLifetime.Scoped
+
+                           );
             services.AddSwaggerGen(swagger =>
             {
                 //This is to generate the Default UI of Swagger Documentation  
@@ -47,7 +51,7 @@ namespace ContactService
                 {
                     Version = "v1",
                     Title = "JWT Token Authentication API",
-                    Description = "ASP.NET Core 5.0 Web API"
+                    Description = "ASP.NET Core 5.0 Contact Service"
                 });
                 // To Enable authorization using Swagger (JWT)  
                 swagger.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
@@ -80,7 +84,7 @@ namespace ContactService
             });
 
 
-            services.AddSingleton<ITokenHelper, JwtHelper>();
+          
 
             // For JWT
             var tokenOptions = Configuration.GetSection("TokenOptions").Get<TokenOptions>();
@@ -104,9 +108,7 @@ namespace ContactService
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
                 };
-            });
-
-
+            }); 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -131,6 +133,7 @@ namespace ContactService
 
             app.UseEndpoints(endpoints =>
             {
+
                 endpoints.MapControllers();
             });
 

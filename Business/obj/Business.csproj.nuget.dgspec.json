@@ -53,6 +53,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[6.3.0, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.2.1, )"
             }
           },
           "imports": [

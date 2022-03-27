@@ -70,3 +70,4 @@ C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\Micro
 C:\Users\eming\source\repos\RiseAssessment\ContactService\obj\Debug\net5.0\ContactService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\eming\source\repos\RiseAssessment\ContactService\bin\Debug\net5.0\RabbitMQ.Client.dll

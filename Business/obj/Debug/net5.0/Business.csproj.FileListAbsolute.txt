@@ -17,3 +17,5 @@ C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\Business.cs
 C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\Business.dll
 C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\Business.csproj.ResolveComReference.cache
+C:\Users\eming\source\repos\RiseAssessment\Business\obj\Debug\net5.0\Interop.Microsoft.Office.Interop.Excel.dll

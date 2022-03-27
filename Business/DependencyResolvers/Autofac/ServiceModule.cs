@@ -2,6 +2,7 @@
 using Autofac;
 using Business.Abstract;
 using Business.Concrete;
+using Business.MessageBrokers.RabbitMq;
 using Common.Helper.Abstract;
 using Common.Helper.Concrete;
 using Core.Utilities.Security.JWT;
@@ -32,6 +33,9 @@ namespace Business.DependencyResolvers.Autofac
             builder.RegisterType<ReportRepository>().As<IReportRepository>().SingleInstance();
             builder.RegisterType<MiddlewareLogManager>().As<IMiddlewareLogService>().SingleInstance();
             builder.RegisterType<MiddlewareLogRepository>().As<IMiddlewareLogRepository>().SingleInstance();
+
+
+            builder.RegisterType<MqQueueHelper>().As<IMessageBrokerHelper>().SingleInstance();
         }
     }
 }

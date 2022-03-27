@@ -66,7 +66,7 @@ namespace Business.Concrete
                 query.Add(x);
             }
          
-
+            
             return  new SuccessDataResult<string>(JsonConvert.SerializeObject(query), Messages.ReportBodyCreated);
 
 

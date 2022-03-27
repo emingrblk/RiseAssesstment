@@ -34,9 +34,9 @@ namespace ContactService.Controllers
             var result = await _ContactInformationManager.AddAsync(contactInformation);
             if (result.IsSuccess)
             {
-                return Ok(new { Message = result.Message });
+                return Ok(new {  result.Message });
             }
-            return BadRequest(new { Message = result.Message });
+            return BadRequest(new {  result.Message });
 
 
 
@@ -51,9 +51,9 @@ namespace ContactService.Controllers
             var result = await _ContactInformationManager.UpdateAsync(contactInformation);
             if (result.IsSuccess)
             {
-                return Ok(new { Message = result.Message });
+                return Ok(new {  result.Message });
             }
-            return BadRequest(new { Message = result.Message });
+            return BadRequest(new {  result.Message });
         }
 
 
@@ -64,9 +64,9 @@ namespace ContactService.Controllers
             var result = await _ContactInformationManager.DeleteAsync(ContactInformationId);
             if (result.IsSuccess)
             {
-                return Ok(new { Message = result.Message });
+                return Ok(new {  result.Message });
             }
-            return BadRequest(new { Message = result.Message });
+            return BadRequest(new {  result.Message });
         }
 
     }
